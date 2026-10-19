@@ -1,0 +1,14 @@
+name: Ubuntu 24.04 build and offline tests
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  noble:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - run: sudo scripts/install-deps.sh
+      - run: scripts/build.sh
+      - run: scripts/test.sh
+      - name: Confirm source preparation is repeatable
+        run: scripts/prepare.sh

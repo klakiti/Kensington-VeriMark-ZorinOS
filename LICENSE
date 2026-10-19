@@ -1,0 +1,10 @@
+SPDX-License-Identifier: LGPL-2.1-or-later
+
+This project is licensed under the GNU Lesser General Public License version
+2.1 or, at your option, any later version.
+
+The complete license text is available from:
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+
+Individual patched upstream files retain their existing copyright and license
+notices. Proprietary Windows binaries and private captures are not distributed.

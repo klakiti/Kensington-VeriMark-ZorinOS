@@ -1,0 +1,9 @@
+.build/
+__pycache__/
+*.pyc
+# Never store device pairing, biometric state, or USB captures in this repository.
+*.pcap
+*.pcapng
+pairing.*
+libfprint-persistent.bin
+private-state/
